@@ -117,7 +117,7 @@
 %                Configuration for fonts
 %-------------------------------------------------------------------------------
 % Set the FontAwesome font to be up-to-date.
-\newfontfamily\FA[Path=fonts/]{FontAwesome}
+\setfontfamily\FA[Path=fonts/]{FontAwesome}
 
 % Define font to use according to localFont option
 \ifundef{\@local}
@@ -290,7 +290,7 @@
 				\end{tikzpicture}				
 			\end{minipage}
 		}{}
-	    \resumetitle{\@tagline}
+	    %\resumetitle{\@tagline}
 	}{
 	    \ifundef{\@photodiameter}{
 			\begin{minipage}{\linewidth}     	

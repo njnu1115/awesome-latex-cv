@@ -8,92 +8,53 @@
 
 
 %Section: Work Experience at the top
-\sectionTitle{实习/项目经历}{\faCode}
+\sectionTitle{项目经历}{\faCode}
  
 \begin{experiences}
-			
- \experience
-    {2015年5月}   {计算机视觉与图像处理研究}{ 浙江大学}{C/Matlab/Python编程}
-    {2013年10月} {
-                      \begin{itemize}
-                        \item Matlab和C混合编程实现图像的SIFT特征提取，并将其应用于目标检测和分类；
-                        \item 通过矩阵分解实现基于隐因子模型的协同过滤，学习用户的喜好偏向，实现推荐系统。
-                        \item Python编程实现基于求解Poissn方程的图像无缝拼接，以及基于热传导的图像去噪。
-                        \item \faGithub: 
-                        \link{https://github.com/huajh/sift}{sift}, 
-                        \link{https://github.com/huajh/mf_re_sys}{MFResys},
-                        \link{https://github.com/huajh/Poisson_image_editing}{PoissonImageEditing},
-                        \link{https://https://github.com/huajh/Image_denoising}{ImageDenoising}.                                                                                       
-                      \end{itemize}
-                    }
-                    {目标检测, 图像处理, 推荐系统, Python}
-  \emptySeparator
-  \experience
-    { 2014年4月} {视频中的行为检测与识别方法研究}{浙江大学}{ 独立开发}
-    {2014年2月}    {
-                      \begin{itemize}
-                        \item 提取视频序列的\emph{时空特征点}，并用K-Means对兴趣点\emph{聚类}并建立\emph{词库}，得到词袋模型; 
-                        \item 采用无监督的pLSA/LDA模型推断后验概率P(动作|词)实现动作类别归类;
-                        \item 以及采用监督学习（KNN,SVM）对每帧图像的字典分类;                    
-                        \item 提出一种简单的投票（``voting''）方法 实现单相机中的多目标检测任务。
-                        \item \faGithub: \link{https://github.com/huajh/action_recognition} {github.com/huajh/action\_recognition}                                                                                          
-                      \end{itemize}
-                    }
-                    {动作识别, 聚类, LDA, Voting, Bag of Words}
 	
-  \emptySeparator
-  \experience
-  {2013年5月} {基于变分贝叶斯方法的医学图像分割}{，浙江工业大学}{本科毕业设计}
-  {2012年12月 }    {
-				  	\begin{itemize}
-				  		\item 将GMM，student-t有限混合模型以及基于Dirichlet process的无限混合模型应用于聚类问题；
-				  		\item 用变分贝叶斯方法推断这三个模型，并推导出详细的算法流程；
-				  		\item 通过考虑laplacian graph 提升了以上三种方法的性能。
-				  		\item \faGithub: \link{https://github.com/huajh/variational_bayesian_clusterings} {github.com/huajh/variational\_bayesian\_clusterings}                                                                                    
-				  	\end{itemize}
-				  }
-				  {混合模型, 聚类, Dirichlet过程, 变分贝叶斯, 流形学习}
-
-  \emptySeparator
-  \experience
-  {2012年11月} {C/C++ 工程师实习生}{研发部分}{道富信息科技（浙江）有限公司， 杭州}
-  {2012年7月}    {
-  	\begin{itemize}
-  		\item  负责\link{http://www.statestreet.com/solutions/by-capability/ssgx/software-solutions/accounting.html}{Princeton Financial Systems}底层技术的维护和开发；
-  		\item  将旧系统中C语言写的部分重构成C++模块，并优化旧系统的性能。
-  	\end{itemize}
-  }
-  {C/C++编程, 性能优化}
-  	
-  \emptySeparator
-  \experience
-  {2012年7月} {项目组成员}{智能系统研究所}{计算机学院，浙江工业大学}
-  {2011年5月 }    {
-				  	\begin{itemize}
-				  		\item  2011年10月- 2012年5月, 研究\emph{基于空间复杂网络的交通路由算法}；
-				  		主要思想是通过\emph{潜在度量空间}建立空间网络模型，设计基于全局和局部信息的路由策略及其导航性能。
-				  		\item  2011年5月 - 9月,  以Microsoft Kinect SDK (C\#)为开发工具编程实现\emph{PPT体感操控系统设计}。
-				  	\end{itemize}
-				  }
-				  {complex networks, kinect, C\#}
-
+	\experience
+	{至今} {BYTON汽车}{车联网研发}{Gateway/TBOX开发}
+	{2018年12月 }    {
+		\begin{itemize}
+			\item 车联网功能定义：根据车辆硬件能力评估整车功能可行性，如空中升级，远程车控，无感启动等
+			\item 需求分析，根据整车功能需求制定车联网与FIC/BCM/DCM/ADAS等模块间接口，包括但不限于CAN Matrix，DBC
+			\item 网关功能实现，负责CAN message/signal logging, UDS stack等功能的编码测试，包括车端的部分C++代码
+			\item 网页端功能实现，负责网页端用JavaScript/React实现根据dbc解析CAN报文的前端
+			\item 基于BLE技术的车辆进入系统功能实现，负责CC2642平台上基于TI SimpleLink SDK的部分编码测试，e.g 片外存储升级功能，启动时低电压保护功能，用于承载车控指令的characteristic，erase/re-pair流程，discovery流程等
+			\item Xilinx BSP集成和配置
+			\item 基于Buildroot的工具链配置和集成，负责将项目需要的依赖项集成进Buildroot defconfig，例如uboot, kernal patch等
+			\item 基于swupdate和Uboot的A/B分区升级功能实现，负责配置环境参数和升级脚本
+			\item 为产线测试定制测试逻辑和固件
+			\item Android端测试工具实现:负责开发手机端的App，实现被动扫描/日志传送/白名单修改等功能，提高日常开发工作效率
+			\item Android手机端无感进入功能测试:负责评审和测试Android手机端到端无感进入功能
+			\item 线束定制：负责定制测试用线束，节约项目周期和开销
+			\item BQE、EMC认证技术支持：负责为认证团队提供TI芯片相关的认证方案，定制操作步骤
+		\end{itemize}
+	}
+	{嵌入式C、C++,BSP on MPSoC,安卓,前端,CAN,LIN,UDS,DBC,MDF4,BLE}
 	
-		  				  
-  \emptySeparator
-  \experience
-  {2011年12月} {\emph{软件开发}}{浙江工业大学}{本科小项目}
-  {2011年10月}    {
-				  	\begin{itemize}
-				  		\item Oct-Dec 2011, \emph{竞赛作品展示平台} | JavaBeans+Servlet+Jsp框架| \emph{队长}. 
-				  		独立设计并实现了JDBC的轻量级对象关系封装,并用于服务端开发， 淘宝UED评审获第二名。    
-						  		\faGithub: \link{https://github.com/huajh/showplatform}{github.com/huajh/showplatform}                                                                           
-				  		\item Nov 2011, \emph{Unix文件系统} | C/C++ | \emph{独立开发}. 
-						  		实现系统的格式化、安装、加载，用户组管理，打开文件管理，内存分配，文件读写，以及基本的shell命令，
-						  		包括目录文件的添加、删除、重命名、拷贝等。
-						  		\faGithub: \link{https://github.com/huajh/unix_file_sys}{github.com/huajh/unix\_file\_sys}
-				  	\end{itemize}
-				  }
-				  {软件开发, 数据库, JAVA, Unix, Sql Server}
-	
+	\emptySeparator	
+	\experience
+	{2018年12月}{瞬联软件}{爱立信离岸软件咨询项目组}{IoT接入网层2开发}
+	{2015年6月} {
+		\begin{itemize}
+            \item 带领两个XFT小组，实现新feature并维护track质量
+			\item 基于3GPP TS 45.008的定义实现eDRX功能
+			\item 监控持续集成状态，及时干预新增issue
+		\end{itemize}
+	}
+	{团队建设, 持续集成}
 		
+	\emptySeparator
+	\experience
+	{2015年6月} {Lucent Tech}{核心网研发}{后台数据库开发，网管平台开发部署}
+	{2004年5月}    {
+		\begin{itemize}
+			\item 核心网节点间数据库同步机制功能实现
+			\item 核心网和接入网更细粒度的性能指标功能实现
+			\item 基于CORBA的网管平台的部署，大中华区驻场技术支持
+		\end{itemize}
+	}
+	{异构架构,CMMI,NMS,软件交付流程,文档编写规范} 
+	\emptySeparator
 \end{experiences}
