@@ -17,9 +17,9 @@
 	{2018年12月 }    {
 		\begin{itemize}
 			\item 车联网功能定义：根据车辆硬件能力评估整车功能可行性，如空中升级，远程车控，无感启动等
-			\item 需求分析，根据整车功能需求制定车联网与FIC/BCM/DCM/ADAS等模块间接口，包括但不限于CAN Matrix，DBC
-			\item 网关功能实现，负责CAN message/signal logging, UDS stack等功能的编码测试，包括车端的部分C++代码
-			\item 网页端功能实现，负责网页端用JavaScript/React实现根据dbc解析CAN报文的前端
+			\item 需求分析，根据整车功能需求制定车联网与FIC/BCM/DCM/ADAS等模块间接口，包括但不限于CAN Matrix，DBC，UDS
+			\item 中央网关功能实现，负责CAN message/signal logging in MDF format, UDS stack等功能的编码测试，包括车端的部分C++代码
+			\item 网页端功能实现，负责用JavaScript/React实现根据dbc解析CAN报文的前端功能
 			\item 基于BLE技术的车辆进入系统功能实现，负责CC2642平台上基于TI SimpleLink SDK的部分编码测试，e.g 片外存储升级功能，启动时低电压保护功能，用于承载车控指令的characteristic，erase/re-pair流程，discovery流程等
 			\item Xilinx BSP集成和配置
 			\item 基于Buildroot的工具链配置和集成，负责将项目需要的依赖项集成进Buildroot defconfig，例如uboot, kernal patch等
