@@ -8,51 +8,50 @@
 
 
 %Section: Work Experience at the top
-\sectionTitle{项目经历}{\faCode}
+\sectionTitle{Experience}{\faCode}
  
 \begin{experiences}
 	
 	\experience
-	{至今} {BYTON汽车}{车联网研发}{网关和Telematics项目管理/开发}
-	{2018年12月 }    {
+	{Now} {BYTON}{Telematics and Gateway}{Developer}
+	{2018DEC}    {
 		\begin{itemize}
-			\item 车联网功能定义：根据车辆硬件能力评估整车功能可行性，如空中升级，远程车控，辅助泊车，无感启动等
-			\item 车联网需求分析：根据整车功能需求制定车联网与FIC/BCM/DCM/ADAS等模块间接口，包括但不限于CAN Matrix，DBC，UDS
-			\item 中央网关功能实现：负责CAN message/signal logging in MDF format, UDS stack, A/B分区滚动升级等功能的编码和测试
-			\item 网页端功能实现：负责用JavaScript/React实现根据dbc解析CAN报文的前端功能
-			\item 基于BLE技术的车辆进入系统功能实现：负责CC2642平台上基于TI SimpleLink SDK的部分编码测试，e.g 片外存储升级功能，启动时低电压保护功能，用于承载车控指令的characteristic，erase/re-pair流程，discovery流程等
-			\item 基于Buildroot的工具链配置和集成，负责将项目需要的依赖项集成进Buildroot defconfig，例如uboot, kernal patch等
-			\item 产线技术支持：定制测试逻辑和固件
-			\item Android端测试工具实现：开发手机端的App，实现被动扫描/日志传送/白名单修改等功能，提高日常开发工作效率
-			\item 线束定制：负责定制测试用线束，节约项目周期和开销
-			\item BQE、EMC认证技术支持：负责为认证团队提供TI芯片相关的认证方案，定制操作步骤
+			\item Design of features like CAN logging  UDS stack on Vehicle Gateway, using C/C++
+			\item Design of CAN log parser, using JavaScript
+			\item Xilinx BSP configuration and integration
+			\item Cross-compilation toolchain configuration and integration
+			\item Design of dual partition upgrade functionality, based on u-boot and swupdate
+			\item Telematics requirements analyze, define interface between telematics and FIC/BCM/DCM/ADAS，including but not limited to CAN Matrix,DBC,UDS
+			\item Lead the design of keyless entry features, including off-chip OTA upgrade, low-voltage detection, BLE characteristic for vehicle control commands，erase/re-pair, discovery. using TI SimpleLink CC26x2 SDK
+			\item Customize verification procedure and firmware for manufacturing
+			\item Implement Android App for passive BLE scan, log transferring, whitelist modification, etc
 		\end{itemize}
 	}
-	{嵌入式C/C++,BSP on MPSoC,安卓,JavaScript,CAN,LIN,UDS,DBC,MDF4,BLE}
+	{Embedded C/C++, BSP on MPSoC, toolchain, JavaScript, CAN,LIN,UDS,DBC,MDF,Android,BLE,Telematics}
 	
 	\emptySeparator	
 	\experience
-	{2018年12月}{瞬联软件}{爱立信离岸软件咨询项目组}{Product Owner}
-	{2015年6月} {
+	{2018DEC}{Cienet Software}{IoT Accessing Network Consulting}{Head of Software Services}
+	{2015JUN} {
 		\begin{itemize}
-            \item 带领两个XFT小组，开发新feature并维护track质量，用不到两年时间为公司打造出两支素质过硬的队伍，开枝散叶进入多个项目挑大梁
-			\item 基于3GPP TS 45.008的定义实现eDRX功能
-			\item 监控持续集成状态，及时干预新增issue
-			\item 修复线上新增问题单。任内两次清空问题单，为公司在业主方赢得良好口碑
+            \item Managing and leading 2 XFT teams for new IoT features and track maintenance
+			\item Implement eDRX feature defined in 3GPP TS 45.008, embedded C developing on PowerPC platform, targeting reducing the power consumer of Raido Base Station.
+			\item Implement EC-GSM feature defined in 3GPP TS 45.008, embedded C developing on PowerPC platform, targeting extending cellular network coverage without hardware investment.
+			\item Monitoring the Continuous Integration health status and do first aid, including but not limited to equipment interface abstraction(by python), resource allocation and configuraiton framework(by Java), jenkins, etc
 		\end{itemize}
 	}
-	{团队建设, 项目管理, 持续集成}
+	{Team coaching, CI}
 		
 	\emptySeparator
 	\experience
-	{2015年6月} {Lucent Tech}{核心网研发}{后台数据库开发，网管平台开发部署}
-	{2004年5月}    {
+	{2015JUN} {Lucent Tech}{Core Network}{Developer}
+	{2004MAY}    {
 		\begin{itemize}
-			\item 核心网节点间数据库同步机制功能实现
-			\item 核心网和接入网更细粒度的性能指标功能实现
-			\item 基于CORBA的网管平台的部署，大中华区驻场技术支持
+			\item Implement sync mechanism between heterogeneous nodes of core network, 
+			\item granularity improvement on performance count features
+			\item deployment of network management system
 		\end{itemize}
 	}
-	{异构架构,CMMI,NMS,软件交付流程,文档编写规范} 
+	{Heterogeneous architecture, CMMI, NMS} 
 	\emptySeparator
 \end{experiences}
